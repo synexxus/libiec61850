@@ -1,12 +1,10 @@
 Source: libiec61850
 Priority: optional
 Maintainer: Robert Middleton <rmiddleton@synexxus.com>
-Build-Depends: debhelper (>= 9), cmake
+Build-Depends: cmake, debhelper (>= 9), doxygen
 Standards-Version: 3.9.8
 Section: libs
 Homepage: <insert the upstream URL, if relevant>
-#Vcs-Git: https://anonscm.debian.org/collab-maint/libiec61850.git
-#Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/libiec61850.git
 
 Package: libiec61850-dev
 Section: libdevel
@@ -17,6 +15,6 @@ Description: libiec61850 development headers
 
 Package: libiec61850
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}
 Description: IEC61850 library
  A library for talking via IEC61850 protocol
