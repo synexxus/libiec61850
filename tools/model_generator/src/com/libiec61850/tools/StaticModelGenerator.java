@@ -892,7 +892,7 @@ public class StaticModelGenerator {
         hOut.println("#ifndef " + hDefineName);
         hOut.println("#define " + hDefineName + "\n");
         hOut.println("#include <stdlib.h>");
-        hOut.println("#include \"iec61850_model.h\"");
+        hOut.println("#include \"libiec61850/iec61850_model.h\"");
         hOut.println();
     }
 
